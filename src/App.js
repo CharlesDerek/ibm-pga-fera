@@ -1,12 +1,16 @@
-function App(props) {
-    const currDate = new Date();
-  
-    return (
-      <div>
-        <h1>Hello, Charles!</h1>
-        <h2>It is {currDate.toLocaleDateString()} and the time now is {currDate.toLocaleTimeString()}.</h2>
-      </div>
-    );
-  }
-  
-  export default App;
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { AppProvider } from './context/AppContext';
+import CartValue from './components/CartValue';
+import ExpenseList from './components/ExpenseList';
+import ItemSelected from './components/ItemSelected';
+import Location from './components/Location';
+
+function App() {
+  return (
+    <div className="App">
+    </div>
+  );
+}
+
+export default App;
